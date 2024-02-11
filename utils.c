@@ -239,7 +239,7 @@ int codicecomune(char output[], char comune[], char provincia[])
 void uppercfirstletter(char input[], int dim){
     int i = 0;
     
-    for (i = 0; i < dim; i++){
+    for (i = 0; i < dim && input[i] != '\0'; i++){
         if (i == 0 || (i > 0 && (input[i - 1] == ' ' ||
                                  input[i - 1] == '-' ||
                                  input[i - 1] == '/'))){
