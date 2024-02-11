@@ -178,10 +178,10 @@ int main() {
     printf("Luogo di nascita: %s (%s)\n\n", persona.comune, persona.provincia);
     printf("CF: %s", persona.cf);
 
-    printf("\nPremi invio per uscire...");
+    printf("\nPremi un tasto per uscire...");
         
 
-    while (getchar() != '\n');
+    while (!getchar());
     
     //fine
     return 0;
