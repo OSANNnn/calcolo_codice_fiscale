@@ -3,7 +3,7 @@
 
 
 int dateGetValidateFormat(char input[], char output[], int dimensione){
-    int appoggio[ELAB]; //array di appoggio per la standardizzazione della data (lo standard per l'utilizzo nelle altre funzioni) aaaammgg
+    int appoggio[ELAB]; //array di appoggio che conterrà i valori della data per il controllo
     int contaChar;
     int isValid;
     
@@ -46,7 +46,7 @@ int dateGetValidateFormat(char input[], char output[], int dimensione){
 void dateConversion(char dataIn[], int dataOut[]){
     int esponente; //variabile contentente l'esponente da applicare a 10
     //init
-    for(int i = 0; i < 4; i++){
+    for(int i = 0; i < 3; i++){
         dataOut[i] = 0;
     }
     //dataout[] 0 = anno, 1 = mese, 2 = giorno
