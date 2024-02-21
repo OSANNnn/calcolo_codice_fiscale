@@ -55,6 +55,16 @@ int main() {
     char comuneRNG[5];
     Persona persona;
 
+    FILE *file = fopen("comuni-redacted.csv", "r");
+
+    if (file == NULL){
+        printf("Il file comuni-redacted.csv non è presente nella cartella dell'applicazione");
+        printf("\nPremi un tasto per uscire...");  
+        while (!getchar());
+        return 0;
+    }
+    fclose(file);
+
     printf("\e[1;1H\e[2J");
     //inizio
     do{
